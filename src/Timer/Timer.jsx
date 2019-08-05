@@ -1,9 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { timeUpdated } from './actions';
 
 class Timer extends React.Component {
   componentDidMount() {
+    const { dispatch } = this.props;
     // set interval
-    this.intervalId = setInterval(() => console.log(new Date().getTime()), 1000);
+    this.intervalId = setInterval(() => {
+      const time = new Date();
+      console.log(time);
+      dispatch(timeUpdated(time));
+    }, 1000);
   }
 
   componentWillUnmount() {
@@ -15,6 +22,8 @@ class Timer extends React.Component {
   }
 }
 
+const connectedTimer = connect()(Timer);
+
 export { 
-  Timer
+  connectedTimer as Timer
 };
