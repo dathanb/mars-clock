@@ -1,5 +1,7 @@
 import { Timer } from './Timer';
+import { TIME_UPDATED } from './actions';
 
 export {
-  Timer
+  Timer,
+  TIME_UPDATED
 };

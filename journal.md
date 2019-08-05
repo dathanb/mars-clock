@@ -1,5 +1,7 @@
 # Journal
 
+## 2019-08-04
+
 <https://jtauber.github.io/mars-clock/> is a gold mine of information about how to calculate Mars time.
 
 So I'm going to start by basically just making a JS library that'll give the same results as that application does.
@@ -45,4 +47,23 @@ Let's start with that.
 
 And now let's mount it.
 
+OK, did that, and it's sending the current date to the console every second.
 
+Now that we have that, let's work on some backend logic -- translating that time into Mars time.
+
+Where does that belong? It's not really a component, it's just a library. So let's put it into its own directory --
+`marsCalendar`.
+
+First step I notice is that our Date in the console is in PDT. The logic for converting to Mars Coordinated Time
+requires UTC datetimes, so let's do that conversion.
+
+According to <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC>, that's just
+`Date.getTime()`.
+
+OK, just gonna dive into the math on that page and replicate it. Be back later.
+
+I'm having trouble converting from Coordinated Mars Time to local mission times. So I'm going to take a step back from
+figuring out all that stuff, and make my clock show Coordinated Mars Time first instead.
+
+In a React+Redux context, the way to transit the date from my Timer to other components is to dispath an action. So
+let's define an action.

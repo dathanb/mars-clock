@@ -1,7 +1,6 @@
-const INITIAL_STATE = {};
+import * as CoordinatedMarsTimeModule from './CoordinatedMarsTime';
+import { combineReducers } from 'redux';
 
-function reducer(state, action) {
-  return INITIAL_STATE;
-}
+const composedReducer = combineReducers({coordinatedMarsTime: CoordinatedMarsTimeModule.reducer});
 
-export { reducer };
+export default composedReducer;
