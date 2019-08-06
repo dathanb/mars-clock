@@ -1,6 +1,7 @@
 import { TIME_UPDATED } from '../Timer';
 
 const INITIAL_STATE = {
+  datetime: new Date(),
   time: new Date().getTime()
 };
 
@@ -10,7 +11,10 @@ function reducer(state, action) {
   }
   switch(action.type) {
     case TIME_UPDATED:
-      return { time: action.payload };
+      return { 
+        datetime: action.payload,
+        time: action.payload.getTime()
+      };
     default:
       return state;
   }

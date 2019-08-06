@@ -5,24 +5,33 @@
  */
 
 const MILLIS_PER_DAY = 1000 * 60 * 60 * 24;
-const JULIAN_DATE_AT_EOPCH = 2_440_587.5;
-const JULIAN_DATE_AT_JAN_1_2000 = 2_451_545;
+const JULIAN_DATE_AT_EPOCH = 2440587.5;
+const JULIAN_DATE_AT_JAN_1_2000 = 2451545;
 const MARS_EARTH_DAY_RATIO = 1.027491252;
-const MARS_SOL_DATE_ADJUSTMENT = 44_796;
+const MARS_SOL_DATE_ADJUSTMENT = 44796;
 const MEAN_ANOMALY_AT_J2000 = 19.3870; // in degrees
 const MARS_ORBIT_LENGTH_IN_EARTH_DAYS = 686.995696258211149;
 const MEAN_DAILY_MOTION = 360 / MARS_ORBIT_LENGTH_IN_EARTH_DAYS; // in degrees
 const PBS = 0.00409; // degrees
 
+function getDeltaJ2000(date) {
+  return getEarthDaysSinceJ2000Epoch(getJulianDateTerrestrialTime(getJulianDateUnixTime(date.getTime())));
+}
+
 function getCoordinatedMarsTime(date) {
   const millis = getMillis(date);
-  console.log(`millis: $millis`);
+  console.log(`millis: ${millis}`);
   const jut = getJulianDateUnixTime(millis);
-  console.log(`jut: $jut`);
+  console.log(`jut: ${jut}`);
   const jtt = getJulianDateTerrestrialTime(jut);
-  console.log(`jtt: $jtt`);
+  console.log(`jtt: ${jtt}`);
   const j2000Days = getEarthDaysSinceJ2000Epoch(jtt);
-  console.log(`j2000Days: $j2000Days`);
+  console.log(`j2000Days: ${j2000Days}`);
+  const marsSolDate = getMarsSolDate(j2000Days);
+  console.log(`marsSolDate: ${marsSolDate}`);
+  const coordinatedMarsTime = getCoordinatedMarsTimeFromSolDate(marsSolDate);
+  console.log(`coordinatedMarsTime: ${coordinatedMarsTime}`);
+  return coordinatedMarsTime;
 }
 
 function getMillis(date) {
@@ -52,8 +61,8 @@ function getMarsSolDate(earthDays) {
   return marsDaysSinceJan6 + MARS_SOL_DATE_ADJUSTMENT;
 }
 
-function getCoordinatedMarsTime(marsSolDate) {
-  return Math.floor(24 * marsSolDate) % 24;
+function getCoordinatedMarsTimeFromSolDate(marsSolDate) {
+  return (24 * marsSolDate) % 24;
 }
 
 function getMarsMeanAnomaly(earthDaysSinceJ2000) {
@@ -92,10 +101,10 @@ function getAerocentricSolarLangitude(earthDaysSinceJ2000) {
 
 export {
   getCoordinatedMarsTime,
+  getDeltaJ2000,
   getMillis,
   getJulianDateUnixTime,
   getJulianDateTerrestrialTime,
   getEarthDaysSinceJ2000Epoch,
-  getMarsSolDate,
-  getCoordinatedMarsTime
+  getMarsSolDate
 };

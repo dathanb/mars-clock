@@ -8,7 +8,6 @@ class Timer extends React.Component {
     // set interval
     this.intervalId = setInterval(() => {
       const time = new Date();
-      console.log(time);
       dispatch(timeUpdated(time));
     }, 1000);
   }
