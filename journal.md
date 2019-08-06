@@ -1,5 +1,10 @@
 # Journal
 
+Links:
+    - [Mars Clock by Jason Tauber](https://jtauber.github.io/mars-clock/)
+    - [Allison and McEwen 2000](https://pubs.giss.nasa.gov/abs/al05000n.html)
+    - [Mars24 Sunclock - Algorithm and Worked Examples](https://www.giss.nasa.gov/tools/mars24/help/algorithm.html)
+
 ## 2019-08-04
 
 <https://jtauber.github.io/mars-clock/> is a gold mine of information about how to calculate Mars time.
