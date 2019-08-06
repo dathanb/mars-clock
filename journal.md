@@ -72,3 +72,20 @@ figuring out all that stuff, and make my clock show Coordinated Mars Time first 
 
 In a React+Redux context, the way to transit the date from my Timer to other components is to dispath an action. So
 let's define an action.
+
+## 2019-08-05
+
+OK, I have some preliminary calculations displaying.
+
+I'm kind of thinking that instead of a file full of a bunch of functions that you have to call correctly, I should maybe
+have a MarsCalendar class, and you can get various things from it, like ∆J2000, MTC, etc. And it can do all the debug
+logging when we call its methods to do calculations or display. So now seems like a good time to refactor in that
+direction.
+
+Also, I'm about at the point where a greater understanding of the actual equations is going to become really handy, so I
+think I need to start developing with a few things open -- my editor, to make progress on the calculations; a pad and
+paper, for taking notes; the mars clock, for reference; the Allison paper, for reading; and the worked equations site,
+for understanding the Allison paper.
+
+I think I'll pick that up tomorrow.
+
