@@ -9,7 +9,7 @@ class Timer extends React.Component {
     this.intervalId = setInterval(() => {
       const time = new Date();
       dispatch(timeUpdated(time));
-    }, 1000);
+    }, 0);
   }
 
   componentWillUnmount() {

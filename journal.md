@@ -89,3 +89,9 @@ for understanding the Allison paper.
 
 I think I'll pick that up tomorrow.
 
+## 2019-08-08
+
+Before going on with the rest of it, I think I'll do some refactoring. I started by doing all the calculations as separate
+functions that could be composed, but that is getting a little unwieldy. Instead, I think I'll bundle all those functions
+into a single class that calculates everything. That'll make it easier to transmit the information around, easier to
+handle composition of functions, and just all around better IMO.
