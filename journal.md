@@ -95,3 +95,10 @@ Before going on with the rest of it, I think I'll do some refactoring. I started
 functions that could be composed, but that is getting a little unwieldy. Instead, I think I'll bundle all those functions
 into a single class that calculates everything. That'll make it easier to transmit the information around, easier to
 handle composition of functions, and just all around better IMO.
+
+OK, done with that. Feels a lot cleaner now, because all those calculations build on each other, so putting them all
+into the `MarsCalendar` constructor makes for a lot more cohesive code than pulling them into separate functions.
+
+OK, now time to go back to the paper and take notes. If we have MTC, how do we get LST?
+
+
