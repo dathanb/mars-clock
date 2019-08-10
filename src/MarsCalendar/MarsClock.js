@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import './marsClock.css';
 
 class MarsClock extends React.Component {
     render() {
         const { name } = this.props;
-        return <div>
+        return <div className="clock">
             {name}: {this.marsTime()}
         </div>;
     }

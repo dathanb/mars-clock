@@ -6,8 +6,6 @@ class DebugView extends React.Component {
   render() {
     const { datetime } = this.props;
     const marsTime = new MarsTime(datetime);
-    const datetimeStr = String(datetime);
-    const millis = datetime.getTime();
 
     return <div>
       <div>Date: {String(marsTime.date)}</div>
