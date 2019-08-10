@@ -89,16 +89,6 @@ class MarsTime {
         return this.meanSolarTimeAtLongitude(long) + this.eotTime;
     }
 
-    /**
-     * Format a decimal representing the hours within the day into a clock string like 12:34:56
-     * @param hours
-     */
-    formatTime(hours) {
-        const hoursPart = Math.floor(hours).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-        const minutesPart = Math.floor((hours * 60)%60).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-        const secondsPart = Math.floor((hours * 3600)%60).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-        return `${hoursPart}:${minutesPart}:${secondsPart}`;
-    }
 }
 
 export {

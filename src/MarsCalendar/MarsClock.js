@@ -2,22 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import './marsClock.css';
+import {Clock} from '../Clock';
 
+/**
+ * A clock that displays MTC (Mars Coordinated Time).
+ */
 class MarsClock extends React.Component {
     render() {
-        const { name } = this.props;
-        return <div className="clock">
-            {name}: {this.marsTime()}
-        </div>;
-    }
-
-    marsTime() {
-        const { marsTime, longitude } = this.props;
-        return marsTime.formatTime(marsTime.trueSolarTimeAtLongitude(longitude));
+        const { name, marsTime } = this.props;
+        return <Clock
+            clockName={name}
+            clockTime={marsTime.mtc}
+        />;
     }
 }
 
-MarsClock.propType = {
+MarsClock.propTypes = {
     marsTime: PropTypes.object,
     name: PropTypes.string,
     longitude: PropTypes.number
