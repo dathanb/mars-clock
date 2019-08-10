@@ -78,7 +78,7 @@ let's define an action.
 OK, I have some preliminary calculations displaying.
 
 I'm kind of thinking that instead of a file full of a bunch of functions that you have to call correctly, I should maybe
-have a MarsCalendar class, and you can get various things from it, like ∆J2000, MTC, etc. And it can do all the debug
+have a MarsTime class, and you can get various things from it, like ∆J2000, MTC, etc. And it can do all the debug
 logging when we call its methods to do calculations or display. So now seems like a good time to refactor in that
 direction.
 
@@ -97,7 +97,7 @@ into a single class that calculates everything. That'll make it easier to transm
 handle composition of functions, and just all around better IMO.
 
 OK, done with that. Feels a lot cleaner now, because all those calculations build on each other, so putting them all
-into the `MarsCalendar` constructor makes for a lot more cohesive code than pulling them into separate functions.
+into the `MarsTime` constructor makes for a lot more cohesive code than pulling them into separate functions.
 
 OK, now time to go back to the paper and take notes. If we have MTC, how do we get LST?
 

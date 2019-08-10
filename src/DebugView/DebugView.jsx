@@ -1,12 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {MarsCalendar} from '../marsCalendar';
-
+import {MarsTime} from '../MarsCalendar';
 
 class DebugView extends React.Component {
   render() {
     const { datetime } = this.props;
-    const marsTime = new MarsCalendar(datetime);
+    const marsTime = new MarsTime(datetime);
     const datetimeStr = String(datetime);
     const millis = datetime.getTime();
 
