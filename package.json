@@ -2,6 +2,7 @@
   "name": "mars-clock",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dathanb.github.io/mars-clock",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
