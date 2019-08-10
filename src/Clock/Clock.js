@@ -9,7 +9,8 @@ class Clock extends React.Component {
     render() {
         const { clockName, clockTime } = this.props;
         return <div className={"clock"}>
-            {`${clockName}: ${Clock.formatTime(clockTime)}`}
+            <div className={"clockTime"}>{Clock.formatTime(clockTime)}</div>
+            <div className={"clockName"}>{clockName}</div>
         </div>;
     }
 
