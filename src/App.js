@@ -1,16 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Timer} from './Timer';
-import {DebugView} from './DebugView';
+import {MarsClock} from './MarsCalendar';
+import {EarthClock} from './EarthCalendar';
 
 function App() {
-  return (
-    <div className="App">
-      <Timer/>
-      <DebugView />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Timer/>
+            <MarsClock
+                name={"Curiosity"}
+                longitude={222.6}
+            />
+            <EarthClock
+                name={"Earth"}
+            />
+        </div>
+    );
 }
 
 export default App;

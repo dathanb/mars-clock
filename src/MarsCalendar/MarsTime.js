@@ -3,7 +3,7 @@ function toRad(deg) {
     return deg / 180 * Math.PI;
 }
 
-class MarsCalendar {
+class MarsTime {
     constructor(date) {
         this.date = date;
         this.millis = date.getTime();
@@ -88,8 +88,9 @@ class MarsCalendar {
     trueSolarTimeAtLongitude(long) {
         return this.meanSolarTimeAtLongitude(long) + this.eotTime;
     }
+
 }
 
 export {
-    MarsCalendar
+    MarsTime
 };
