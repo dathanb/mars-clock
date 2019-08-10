@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './clock.css';
 
 /**
  * Given a name and a time in props, displays it as a clock.
