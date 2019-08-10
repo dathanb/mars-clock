@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mars-clock/static/css/main.19d71058.chunk.css",
+    "main.js": "/mars-clock/static/js/main.c77b5a98.chunk.js",
+    "main.js.map": "/mars-clock/static/js/main.c77b5a98.chunk.js.map",
+    "runtime~main.js": "/mars-clock/static/js/runtime~main.79f752e9.js",
+    "runtime~main.js.map": "/mars-clock/static/js/runtime~main.79f752e9.js.map",
+    "static/js/2.3be312b4.chunk.js": "/mars-clock/static/js/2.3be312b4.chunk.js",
+    "static/js/2.3be312b4.chunk.js.map": "/mars-clock/static/js/2.3be312b4.chunk.js.map",
+    "index.html": "/mars-clock/index.html",
+    "precache-manifest.2e2c969b2fcaf92cfc9f96bcb3905b47.js": "/mars-clock/precache-manifest.2e2c969b2fcaf92cfc9f96bcb3905b47.js",
+    "service-worker.js": "/mars-clock/service-worker.js",
+    "static/css/main.19d71058.chunk.css.map": "/mars-clock/static/css/main.19d71058.chunk.css.map",
+    "static/media/index.css": "/mars-clock/static/media/digital-7-mono.58045dab.ttf"
+  }
+}
