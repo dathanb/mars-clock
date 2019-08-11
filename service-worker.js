@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mars-clock/precache-manifest.2e2c969b2fcaf92cfc9f96bcb3905b47.js"
+  "/mars-clock/precache-manifest.d1da1ba6ffa4d39abc8e7b103adb5c10.js"
 );
 
 self.addEventListener('message', (event) => {
