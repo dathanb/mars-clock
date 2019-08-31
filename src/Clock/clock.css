@@ -5,6 +5,9 @@
   font-size: 2em;
   font-family: 'Digital-7', sans-serif;
   margin-bottom: 1rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  padding-bottom: 56.25%;
 }
 
 .clockName {
