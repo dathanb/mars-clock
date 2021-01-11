@@ -3,6 +3,11 @@ function toRad(deg) {
     return deg / 180 * Math.PI;
 }
 
+/**
+ * Based on calculations from https://pubs.giss.nasa.gov/abs/al05000n.html
+ * and the excellent Mars clock at http://marsclock.com/
+ * And the examples at https://www.giss.nasa.gov/tools/mars24/help/algorithm.html
+ */
 class MarsTime {
     constructor(date) {
         this.date = date;
