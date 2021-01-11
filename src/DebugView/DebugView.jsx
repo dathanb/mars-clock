@@ -7,7 +7,7 @@ class DebugView extends React.Component {
     const { datetime } = this.props;
     const marsTime = new MarsTime(datetime);
 
-    return <div>
+    return <div className={"clock"}>
       <div>Date: {String(marsTime.date)}</div>
       <div>Unix Epoch Millis: {marsTime.millis}</div>
       <div>JD<sub>UT</sub>: {DebugView.formatNumber(marsTime.jut)}</div>

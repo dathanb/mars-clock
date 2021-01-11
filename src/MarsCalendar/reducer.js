@@ -2,7 +2,8 @@ import { TIME_UPDATED } from '../Timer';
 import { MarsTime } from './MarsTime';
 
 const INITIAL_STATE = {
-    marsTime: new MarsTime(new Date())
+    marsTime: new MarsTime(new Date()),
+    curiosityTime: 0
 };
 
 function reducer(state, action) {
@@ -11,8 +12,11 @@ function reducer(state, action) {
     }
     switch(action.type) {
         case TIME_UPDATED:
+            let marsTime = new MarsTime(action.payload);
             return {
-                marsTime: new MarsTime(action.payload)
+                marsTime: marsTime,
+                mtc: marsTime.mtc,
+                curiosityTime: marsTime.trueSolarTimeAtLongitude(-137.4)
             };
         default:
             return state;
