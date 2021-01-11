@@ -1,9 +1,11 @@
 import { MarsTime } from './MarsTime';
-import { MarsClock } from './MarsClock';
+import { MtcClock } from './MtcClock';
+import { CuriosityClock } from './CuriosityClock';
 import { reducer } from './reducer';
 
 export {
     MarsTime,
-    MarsClock,
+    MtcClock,
+    CuriosityClock,
     reducer
 };
