@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mars-clock/static/css/main.2b90175c.chunk.css",
-    "main.js": "/mars-clock/static/js/main.ad73d1bf.chunk.js",
-    "main.js.map": "/mars-clock/static/js/main.ad73d1bf.chunk.js.map",
+    "main.js": "/mars-clock/static/js/main.a74dcb45.chunk.js",
+    "main.js.map": "/mars-clock/static/js/main.a74dcb45.chunk.js.map",
     "runtime~main.js": "/mars-clock/static/js/runtime~main.79f752e9.js",
     "runtime~main.js.map": "/mars-clock/static/js/runtime~main.79f752e9.js.map",
     "static/js/2.3be312b4.chunk.js": "/mars-clock/static/js/2.3be312b4.chunk.js",
     "static/js/2.3be312b4.chunk.js.map": "/mars-clock/static/js/2.3be312b4.chunk.js.map",
     "index.html": "/mars-clock/index.html",
-    "precache-manifest.4911f56554a8298bd9884a87db785618.js": "/mars-clock/precache-manifest.4911f56554a8298bd9884a87db785618.js",
+    "precache-manifest.97c61537bc3bfe8b9233c9e8fc420c1a.js": "/mars-clock/precache-manifest.97c61537bc3bfe8b9233c9e8fc420c1a.js",
     "service-worker.js": "/mars-clock/service-worker.js",
     "static/css/main.2b90175c.chunk.css.map": "/mars-clock/static/css/main.2b90175c.chunk.css.map",
     "static/media/index.css": "/mars-clock/static/media/digital-7-mono.58045dab.ttf"

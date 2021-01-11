@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f5559bb5ca4e4b986e69fbf9df13de6",
+    "revision": "8d494b05f83d79189936b5e5287eaec1",
     "url": "/mars-clock/index.html"
   },
   {
-    "revision": "17439f8e44e7793237bb",
+    "revision": "6a64c5d7edfd813975ad",
     "url": "/mars-clock/static/css/main.2b90175c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mars-clock/static/js/2.3be312b4.chunk.js"
   },
   {
-    "revision": "17439f8e44e7793237bb",
-    "url": "/mars-clock/static/js/main.ad73d1bf.chunk.js"
+    "revision": "6a64c5d7edfd813975ad",
+    "url": "/mars-clock/static/js/main.a74dcb45.chunk.js"
   },
   {
     "revision": "7646267b599e16e6c343",
