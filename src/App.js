@@ -9,7 +9,7 @@ function App() {
         <div className="App">
             <Timer/>
             <MarsClock
-                name={"Curiosity"}
+                name={"MTC"}
                 longitude={222.6}
             />
             <EarthClock
